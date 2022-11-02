@@ -40,7 +40,7 @@ function M.enable()
 
   -- Enable different modes
   if config.opts.highlight_on_key then
-    for _, key in ipairs({'f', 'F', 't', 'T'}) do
+    for _, key in ipairs({'f', 'F'}) do
       vim.keymap.set({'n', 'v'}, key, function()
         local line = vim.api.nvim_get_current_line()
         local cursor = vim.api.nvim_win_get_cursor(0)
