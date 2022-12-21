@@ -2,7 +2,7 @@
 local M = {}
 
 local defaults = {
-  highlight_on_key = false,
+  highlight_on_key = true,
   debug = false
 }
 
